@@ -1,0 +1,65 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body {
+  padding: 1em;
+  margin: 0;
+  font-family: "Open Sans", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue";
+}
+
+.flex {
+  display: flex;
+}
+
+#game {
+  display: flex;
+  margin: 0 1em 1em 0;
+}
+#game_canvas {
+  margin: 0 1em 1em 0;
+}
+
+#score_display {
+  margin: 0 1em 1em 0;
+  background-color: #eee;
+  padding: 1em;
+  min-width: 110px;
+  text-align: right;
+  overflow: auto;
+  max-height: 300px;
+}
+/* Hide scores after 10 */
+#score~div+div+div+div+div+div+div+div+div+div {
+  display: none
+}
+
+#score {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#algo {
+  display: flex;
+  flex-direction: column;
+  margin: -1em;
+}
+
+#algo > div {
+  margin: 1em 1em 0;
+  background-color: #eee;
+  padding: 1em;
+}
+
+article {
+  display: inline-block;
+  margin-right: 1em;
+  border-left: 1px solid #ddd;
+  padding-left: 1em;
+  vertical-align: top;
+}
+
+pre {
+  max-height: 400px;
+  overflow: auto;
+}

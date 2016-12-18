@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Integer Snake</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="Connect neighbouring squares that contain the same number.">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div id="main_content">
+    <div id="game">
+      <div id="score_display">
+        SCORE: <div id="score">0</div>
+        <pre id="topscore"></pre>
+      </div>
+      <canvas id="game_canvas"></canvas>
+      <div id="algo"></div>
+    </div>
+    <div class="debug">
+      <h2>Debug <input type="checkbox" id="slow" onchange="toggledSlow()" checked></h2>
+      <div>
+        <article>
+          flatGrid
+          <pre id="indices"></pre>
+        </article>
+        <article>
+          # Outs
+          <pre id="outsNum"></pre>
+        </article>
+        <article>
+          Outs mapping
+          <pre id="outsMap"></pre>
+        </article>
+        <article>
+          Snake lengths
+          <pre id="snakeLength"></pre>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Helpers -->
+  <script src="js/lib.js"></script>
+  <script src="js/array.js"></script>
+
+  <!-- Legacy game -->
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+
+  <!-- UI -->
+  <!-- <script src="js/vendor/vue.js"></script> -->
+
+  <!-- Algorithm -->
+  <script>var algo = []</script>
+  <script src="algo/maxSnakeValue6.js"></script>
+  <script src="algo/maxSnakeValue.js"></script>
+  <script src="algo/random.js"></script>
+  <script src="algo/juta.js"></script>
+  <script src="algo/thomas.js"></script>
+  <script src="js/algo-loader.js"></script>
+</body>
+
+</html>
